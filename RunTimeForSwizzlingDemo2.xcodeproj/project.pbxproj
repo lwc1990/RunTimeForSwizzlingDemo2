@@ -13,6 +13,9 @@
 		3D75FF051EBDBF4C00C0017F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D75FF031EBDBF4C00C0017F /* Main.storyboard */; };
 		3D75FF071EBDBF4C00C0017F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D75FF061EBDBF4C00C0017F /* Assets.xcassets */; };
 		3D75FF0A1EBDBF4C00C0017F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D75FF081EBDBF4C00C0017F /* LaunchScreen.storyboard */; };
+		3D75FF151EBDC1C300C0017F /* UIButton+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D75FF141EBDC1C300C0017F /* UIButton+Swizzling.m */; };
+		3D75FF181EBE47ED00C0017F /* UIViewController+SWizzling_AddMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D75FF171EBE47ED00C0017F /* UIViewController+SWizzling_AddMethod.m */; };
+		3D75FF641EBF7F0900C0017F /* NSObject+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D75FF631EBF7F0900C0017F /* NSObject+Swizzling.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		3D75FF061EBDBF4C00C0017F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D75FF091EBDBF4C00C0017F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D75FF0B1EBDBF4C00C0017F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D75FF131EBDC1C300C0017F /* UIButton+Swizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Swizzling.h"; sourceTree = "<group>"; };
+		3D75FF141EBDC1C300C0017F /* UIButton+Swizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Swizzling.m"; sourceTree = "<group>"; };
+		3D75FF161EBE47ED00C0017F /* UIViewController+SWizzling_AddMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SWizzling_AddMethod.h"; sourceTree = "<group>"; };
+		3D75FF171EBE47ED00C0017F /* UIViewController+SWizzling_AddMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SWizzling_AddMethod.m"; sourceTree = "<group>"; };
+		3D75FF621EBF7F0900C0017F /* NSObject+Swizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Swizzling.h"; sourceTree = "<group>"; };
+		3D75FF631EBF7F0900C0017F /* NSObject+Swizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Swizzling.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +67,7 @@
 		3D75FEF91EBDBF4C00C0017F /* RunTimeForSwizzlingDemo2 */ = {
 			isa = PBXGroup;
 			children = (
+				3D75FF121EBDC12C00C0017F /* category */,
 				3D75FEFD1EBDBF4C00C0017F /* AppDelegate.h */,
 				3D75FEFE1EBDBF4C00C0017F /* AppDelegate.m */,
 				3D75FF001EBDBF4C00C0017F /* ViewController.h */,
@@ -77,6 +87,19 @@
 				3D75FEFB1EBDBF4C00C0017F /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3D75FF121EBDC12C00C0017F /* category */ = {
+			isa = PBXGroup;
+			children = (
+				3D75FF131EBDC1C300C0017F /* UIButton+Swizzling.h */,
+				3D75FF141EBDC1C300C0017F /* UIButton+Swizzling.m */,
+				3D75FF161EBE47ED00C0017F /* UIViewController+SWizzling_AddMethod.h */,
+				3D75FF171EBE47ED00C0017F /* UIViewController+SWizzling_AddMethod.m */,
+				3D75FF621EBF7F0900C0017F /* NSObject+Swizzling.h */,
+				3D75FF631EBF7F0900C0017F /* NSObject+Swizzling.m */,
+			);
+			path = category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +174,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D75FF021EBDBF4C00C0017F /* ViewController.m in Sources */,
+				3D75FF641EBF7F0900C0017F /* NSObject+Swizzling.m in Sources */,
+				3D75FF181EBE47ED00C0017F /* UIViewController+SWizzling_AddMethod.m in Sources */,
+				3D75FF151EBDC1C300C0017F /* UIButton+Swizzling.m in Sources */,
 				3D75FEFF1EBDBF4C00C0017F /* AppDelegate.m in Sources */,
 				3D75FEFC1EBDBF4C00C0017F /* main.m in Sources */,
 			);
